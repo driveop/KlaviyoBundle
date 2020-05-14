@@ -1,6 +1,6 @@
 <?php
 
-namespace KlaviyoBundle\Services;
+namespace DriveOp\KlaviyoBundle\Services;
 
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Psr7\Request;
