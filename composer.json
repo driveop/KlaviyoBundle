@@ -1,0 +1,38 @@
+{
+  "name": "driveop/klaviyo-bundle",
+  "description": "A simple Symfony bundle for Klaviyo API.",
+  "type": "symfony-bundle",
+  "keywords": [
+    "driveop",
+    "klaviyo"
+  ],
+  "homepage": "https://github.com/driveop/KlaviyoBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Juan Paulo Lara",
+      "email": "juan.lara@driveop.com",
+      "role": "developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "symfony/config": "^3.0 || ^4.0",
+    "symfony/dependency-injection": " ^3.0 || ^4.0",
+    "symfony/framework-bundle": " ^3.0 || ^4.0",
+    "symfony/http-foundation": " ^3.0 || ^4.0",
+    "symfony/http-kernel": " ^3.0 || ^4.0",
+    "symfony/options-resolver": " ^3.0 || ^4.0",
+    "symfony/validator": " ^3.0 || ^4.0",
+    "guzzlehttp/guzzle": "^6.5",
+    "ext-json": "*"
+  },
+  "suggest": {
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-0": { "DriveOp\\KlaviyoBundle": "" }
+  },
+  "target-dir": "DriveOp/KlaviyoBundle"
+}
