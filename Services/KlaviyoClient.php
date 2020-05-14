@@ -97,7 +97,7 @@ class KlaviyoClient
         ]);
 
         try {
-            $request = new Request('POST', 'v2/list/'. trim($listId) .'/subscribe', $headers, $body);
+            $request = new Request('POST', 'v2/list/'. trim($listId) .'/members', $headers, $body);
             $response = $this->client->send($request);
         } catch (\Throwable $e) {
             $this->log->error('KlaviyoAPI -> subscribeToList ' . $e->getMessage());
@@ -136,7 +136,7 @@ class KlaviyoClient
         ]);
 
         try {
-            $request = new Request('DELETE', 'v2/list/'. trim($listId) .'/unsubscribe', $headers, $body);
+            $request = new Request('DELETE', 'v2/list/'. trim($listId) .'/members', $headers, $body);
 
             $response = $this->client->send($request);
         } catch (\Throwable $e) {
