@@ -2,8 +2,8 @@ parameters:
   klaviyo_client.class: DriveOp\KlaviyoBundle\Services\KlaviyoClient
 
 services:
-  DriveOp\KlaviyoBundle\Services\KlaviyoClient: "@klaviyo_client"
-  klaviyo_client:
-    class:     "%klaviyo_client.class%"
-    arguments: ["@logger", "%klaviyo_api_key%"]
-    autowire: true
+     DriveOp\KlaviyoBundle\Services\KlaviyoClient: "@klaviyo_client"
+     klaviyo_client:
+         class:     "%klaviyo_client.class%"
+         arguments: ["@logger", "%klaviyo_api_key%"]
+         autowire: true
