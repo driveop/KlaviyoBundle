@@ -12,7 +12,7 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
  */
 class Configuration implements ConfigurationInterface
 {
-    const ROOT_NAME = 'driveop';
+    const ROOT_NAME = 'driveop_klaviyo';
     const APP_NAME = 'klaviyo';
 
     /**
