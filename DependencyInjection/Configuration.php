@@ -25,13 +25,13 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-            ->arrayNode(self::APP_NAME)
-            ->children()
-            ->scalarNode('klaviyo_api_key')
-            ->defaultValue(null)
-            ->end()
-            ->end()
-            ->end()
+                ->arrayNode(self::APP_NAME)
+                    ->children()
+                        ->scalarNode('klaviyo_api_key')
+                            ->defaultValue(null)
+                        ->end()
+                    ->end()
+                ->end()
             ->end();
 
         return $treeBuilder;
